@@ -7,31 +7,34 @@ int  merge(int nums1[], int  nums2[], int result[], int An, int Bn){
 
   int p1 = 0; //pointing towards array 1
   int p2 = 0; //pointing towards array 2
-    
+  int index = 0;   
     while(p1 < nums1.size() && p2 < nums2.size()){
         if(nums1[p1] < nums2[p2]){
-            result(counter++) = nums1[p1];
+            result(index++) = nums1[p1];
             p1++;
         }
         else if(nums1[p1] > nums2[p2]){
-            result(counter++) = nums2[p2];
+            result(index++) = nums2[p2];
             p2++;
         }
     }
     
     
     while(p1 < nums1.size()){
-        result(counter++) = nums1[p1];
+        result(index++) = nums1[p1];
         p1++;
     }
+  
     while(p2 < nums2.size()){
-        result(counter++) = nums2[p2];
+        result(index++) = nums2[p2];
         p2++;
     }
     
 }
 
-int  merge_sort(int arr[]){
+
+//inputs - input array, result array 
+int  merge_sort(int ){
   
   int N = arr.size();
   int mid = N/2;

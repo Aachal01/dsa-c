@@ -22,6 +22,7 @@ vector<int> merge(vector<int> nums1, vector<int> nums2){
         result.push_back(nums1[p1]);
         p1++;
     }
+  
     while(p2 < nums2.size()){
         result.push_back(nums2[p2]);
         p2++;
